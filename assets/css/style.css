@@ -1,0 +1,91 @@
+/* ! ++++++++++ BASIC ++++++++++ */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Regular";
+  src: url(../font/Raleway/static/Raleway-Regular.ttf);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  font-family: "Regular";
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/* ! ++++++++++ SECTION ++++++++++ */
+
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: palegoldenrod;
+}
+
+article {
+  width: 25%;
+  min-height: 60rem;
+  margin-bottom: 5rem;
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  box-shadow: 3px 3px 3px 3px rgb(43, 43, 43);
+}
+
+form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+input[type="text"] {
+  text-align: center;
+  width: 80%;
+  height: 4rem;
+  margin-bottom: 2rem;
+  border: none;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+}
+
+input[type="submit"],
+button {
+  text-align: center;
+  width: 13rem;
+  height: 4rem;
+  margin-bottom: 2rem;
+  border: none;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  background-color: palegoldenrod;
+  transition: all 0.3s;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  transform: scale(1.1);
+  background-color: rgb(128, 124, 91);
+  color: white;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <section>
+      <article>
+        <h1>Morse-Translator</h1>
+        <form onsubmit="morseFunction(); return false">
+          <input type="text" class="message" placeholder="Deine Nachricht" />
+          <input type="submit" value="Übersetzen" />
+        </form>
+        <button onclick="resetFunction();return false">Reset</button>
+      </article>
+      <article>
+        <h1>Morse-Code</h1>
+        <h2 class="output-morse"></h2>
+      </article>
+      <article>
+        <h1>Erklärung</h1>
+        <h2 class="output-description"></h2>
+      </article>
+    </section>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
